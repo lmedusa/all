@@ -10,7 +10,7 @@ _ft_read:
 	jc			_error			; call error function
 	ret
 
-_error
+_error:
 	push		rbx				; save rbx on stack
 	mov			rbx, rax		; rbx = rax
 	call		___error		; errno
